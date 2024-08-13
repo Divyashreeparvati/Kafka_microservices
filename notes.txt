@@ -1,0 +1,4 @@
+tsc -p .  // build typescript 
+npm add @type/express --dev   // add express to dev dependency
+npm add supertest @types/supertest -D  // installing supertest for TDD 
+npm add jest ts-jest @types/jest -D  // installing jest for TDD

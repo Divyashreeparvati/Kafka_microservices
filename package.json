@@ -11,8 +11,11 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/rosie": "^0.0.45",
     "dotenv": "^16.4.5",
     "nodemon": "^3.1.4",
+    "rosie": "^2.1.1",
     "typescipt": "^1.0.0"
   },
   "devDependencies": {

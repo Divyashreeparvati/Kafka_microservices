@@ -3,19 +3,20 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MockCatalogRepository = void 0;
 class MockCatalogRepository {
     create(data) {
-        throw new Error("Method not implemented.");
+        const mockproduct = Object.assign({ id: 123 }, data);
+        return Promise.resolve(mockproduct);
     }
     update(data) {
-        throw new Error("Method not implemented.");
+        return Promise.resolve(data);
     }
     delete(id) {
-        throw new Error("Method not implemented.");
+        return Promise.resolve(id);
     }
-    find() {
-        throw new Error("Method not implemented.");
+    find(limit, offset) {
+        return Promise.resolve([]);
     }
     findOne(id) {
-        throw new Error("Method not implemented.");
+        return Promise.resolve({});
     }
 }
 exports.MockCatalogRepository = MockCatalogRepository;

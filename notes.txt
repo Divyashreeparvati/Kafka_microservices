@@ -4,3 +4,11 @@ npm add supertest @types/supertest -D  // installing supertest for TDD
 npm add jest ts-jest @types/jest -D  // installing jest for TDD
 
 npm jest --init // initialize jest config file
+
+docker-compose -up //to run docker db in the background
+
+npm add prisma -D // install prisma
+
+npx prisma init --datasource-provider postgresql // to add postgresql ad datasource
+
+npx prisma migrate dev --name init // to create migration tool 

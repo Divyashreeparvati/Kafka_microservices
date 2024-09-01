@@ -1,6 +1,7 @@
 import expressApp from './expressApp'
 import dotenv from 'dotenv'
 import path from 'path'
+import { logger } from './utils'
 
 const env=process.env.NODE_ENV
 
@@ -15,7 +16,7 @@ export const StartServer=async()=>{
     })
 
     process.on('uncaughtException',async (err)=>{
-        console.log(err)
+        logger.error(err)
         process.exit(1)
     })
 

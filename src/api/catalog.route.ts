@@ -45,7 +45,7 @@ router.patch(
       return res.status(200).json(data);
     } catch (error) {
       const err = error as Error;
-      return res.status(500).json(err.message);
+      return next(err);
     }
   }
 );
